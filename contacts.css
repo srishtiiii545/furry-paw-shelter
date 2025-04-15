@@ -1,0 +1,54 @@
+            body { 
+            font-family: 'Amazon Ember', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: rgb(247, 168, 57);
+           }
+        .sonu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+      
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        form {
+            display: grid;
+            grid-gap: 15px;
+            
+  }
+  
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #febd69;
+            color: #111;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #f7ca88;
+        }

@@ -1,0 +1,48 @@
+.sst{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    width: 20px;
+    height: 10px;
+    margin-right: 500px;
+}
+.h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 10px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.host{ display: flex;
+    flex-direction: column;
+    
+}
+.gost{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family:cursive;
+    
+}
+
+.donation-page{
+position: relative;
+top: 0;
+width: 100%;
+left: 100;
+height: 5200px;
+}

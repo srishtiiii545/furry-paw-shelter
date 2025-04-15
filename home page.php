@@ -1,0 +1,190 @@
+<?php
+session_start();
+?>
+
+<html>
+    <head>
+        <title>
+        furry paws shelter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+        <header>
+        <img src="images/logo1.png" alt="pet\WhatsApp_Image_2024-02-09_at_13.30.44_b2160691-removebg-preview.png" width="150px" height="150px">
+            <h1>Welcome to our furry paws shelter </h1>
+            <span class="material-symbols-outlined">
+              pets
+              </span>
+        </header>
+    
+        <nav>
+            <a href="home page.php">Home</a>
+            <a href="about.php">About Us</a>
+            <a href="contact us.php">Contact</a>
+            <a href="dog breed.php">Dog Breed</a>
+            <a href="cat breed.php">Cat Breed</a>
+            <a href="payment.php">Donation</a>
+            
+            <?php
+            if(isset($_SESSION['name']))
+            {
+              ?><a href="profile.php"> My Account</a>
+              <?php
+            }
+            else
+            {
+              ?>
+              <a href="userlogin.php">SIGN IN</a>
+              <?php
+            }
+            ?>
+        </nav> 
+  
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+          let i;
+          const slides = document.getElementsByClassName("slide");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+              slideIndex = 1;
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 1000); 
+      }
+    </script>
+     <link rel="stylesheet" href="style.css">
+      <!-- sile show -->
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="images\WhatsApp Image 2024-02-09 at 13.32.30_587e5ff4.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="100%" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">  </svg>
+          
+        </div>
+        <div class="carousel-item">
+          <img src="images\WhatsApp Image 2024-02-09 at 13.32.18_739b89bf.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="100%" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+        </div>
+        <div class="carousel-item active">
+          <img src="images\WhatsApp Image 2024-02-09 at 13.32.19_78eb07b8.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="100%" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text></svg>
+        </div>
+      </div>
+    </div>
+    
+<!-- circular card -->
+  <div class="siri">
+  
+  <h1>Our Service</h1></div>
+  <div class="container">
+    <div class="row">
+      <!-- card1 -->
+       <div class="card card-circle">
+          <div class="card-icon">
+             <i class="fas fa-apple-alt"></i>
+          </div>
+          <div class="card-body">
+             <h5 class="card-title">Grooming pets</h5>
+             <img src="images\download-removebg-preview-removebg-preview.png" alt="C:\Users\Rajch\Downloads\download-removebg-preview-removebg-preview.png" width="200px" height="200px"><br>
+             <a href="contact us.php" class="btn btn-primary">Call us</a>
+          </div>
+       </div>
+       <!-- card2 -->
+       <div class="card card-circle">
+          <div class="card-icon">
+             <i class="fas fa-cookie"></i>
+          </div>
+          <div class="card-body">
+             <h5 class="card-title">Training pets</h5>
+         <img src="images\WhatsApp_Image_2024-02-09_at_13.31.10_4f7c9faf-removebg-preview.png" alt="c:\Users\Rajch\Downloads\WhatsApp_Image_2024-02-09_at_13.31.10_4f7c9faf-removebg-preview.png" width="200" height="200">
+             <a href="contact us.php" class="btn btn-primary">Call us</a>
+          </div>
+       </div>
+       <!-- card3 -->
+       <div class="card card-circle ">
+          <div class="card-icon">
+             <i class="fas fa-carrot"></i>
+          </div>
+          <div class="card-body">
+             <h5 class="card-title">vaccination for pets</h5>
+             <img src="images\WhatsApp_Image_2024-02-09_at_13.31.07_324e4537-removebg-preview.png" alt="c:\Users\Rajch\Downloads\WhatsApp_Image_2024-02-09_at_13.31.07_324e4537-removebg-preview.png" width="200" height="200" >
+             <a href="contact us.php" class="btn btn-primary">Call us</a>
+          </div>
+       </div>
+    </div>
+ </div>
+
+<br>
+<br>
+<br>
+<!-- text &image -->
+<div class="text & image">
+<div class="image-container">
+<div class="textie"><h1>Your Pet Adoption Journey With Furry paws shelter</h1></div>
+<img src="images\WhatsApp Image 2024-02-09 at 13.32.40_f56d6bfd.jpg" alt="C:\Users\Rajch\OneDrive\Desktop\New folder\WhatsApp Image 2024-02-09 at 13.32.40_f56d6bfd.jpg" width="80%" height="800">
+</div></div>
+</div>
+ 
+<div class="donate"></div>
+<div class="do">
+    <h2>Donate to Support Us</h2>
+</div>
+
+<form id="donationForm" action="process_donation.php" method="post" onsubmit="showAlert(); return false;">
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="amount">Donation Amount:</label>
+  <input type="number" id="amount" name="amount" min="1" required>
+
+  <label for="message">Message (Optional):</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea>
+  <a href="payment.php" class="btn btn-primary">DONATE US</a>
+   
+</form>
+
+<script>
+  function showAlert() {
+      // Show a simple alert message
+      alert("Thank you for your donation!");
+  }
+</script>
+  
+    </div>
+
+  
+    
+<div class="footer_g"></div>
+  
+
+    <footer>
+        <p>&copy; 2024 furrypaws shelter. All Rights Reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms&services.html">Terms of Service</a>
+            <a href="contact us.php">Contact Us</a>
+        </p>
+    </footer>
+  </div>
+</body>
+</html>
